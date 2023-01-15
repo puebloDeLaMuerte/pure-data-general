@@ -1,0 +1,7 @@
+#N canvas 723 355 450 300 12;
+#X obj 82 33 inlet~;
+#X obj 85 214 outlet~;
+#X obj 91 117 send~ sr_\$0;
+#X obj 91 146 receive~ sr_\$0;
+#X connect 0 0 2 0;
+#X connect 3 0 1 0;

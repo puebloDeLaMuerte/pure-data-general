@@ -1,0 +1,20 @@
+#N canvas 1086 325 578 598 10;
+#X obj 32 27 inlet;
+#X obj 433 25 inlet;
+#X obj 30 549 outlet;
+#X obj 497 547 outlet;
+#X obj 120 310 change;
+#X text 141 27 allows a numberbox to be set externally or;
+#X text 141 42 set by clicking it \, while listening/sending;
+#X text 141 57 on the same bus;
+#X text 277 173 getter for numberbox;
+#X text 374 391 setter for numberbox;
+#X text 28 52 bus IN;
+#X text 27 433 bus OUT;
+#X text 152 85 - p_getset+ only allows positive numbers through;
+#X text 152 105 - p_getsetC clips values between creationArguments
+\$1 for min and \$2 for max;
+#X connect 0 0 4 0;
+#X connect 0 0 3 0;
+#X connect 1 0 4 0;
+#X connect 4 0 2 0;
