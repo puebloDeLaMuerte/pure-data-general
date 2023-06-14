@@ -1,4 +1,4 @@
-#N canvas 70 112 1001 865 10;
+#N canvas 506 68 1001 865 10;
 #X obj 464 303 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000
 #000000 1 1 1;
 #X obj 94 53 inlet;
@@ -97,10 +97,10 @@
 #X connect 11 0 10 1;
 #X restore 204 768 pd splitVelocity;
 #X msg 563 276 1;
-#X text 462 328 freq;
-#X text 494 328 midinote;
-#X text 550 328 veloc;
-#X text 590 328 zeroVelo;
+#X text 462 315 freq;
+#X text 494 315 midinote;
+#X text 550 315 veloc;
+#X text 590 315 zeroVelo;
 #X connect 0 0 40 0;
 #X connect 1 0 24 0;
 #X connect 1 0 34 0;
@@ -167,4 +167,4 @@
 #X connect 60 0 30 0;
 #X connect 60 1 50 0;
 #X connect 61 0 52 0;
-#X coords 0 -1 1 1 185 30 2 460 300;
+#X coords 0 -1 1 1 185 36 2 460 300;
