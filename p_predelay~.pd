@@ -1,0 +1,22 @@
+#N canvas 675 44 450 300 12;
+#X obj 38 40 inlet~;
+#X obj 35 216 outlet~;
+#X obj 172 141 delread~ \$0del 0;
+#X obj 329 39 flatgui/knob 37 37 1 100 1 0 empty empty empty -2 -8
+0 8 #fcfcfc #000000 #000000 6 1 1 2 3 4;
+#X floatatom 369 55 3 0 0 0 - - - 0 0 1, f 3;
+#X obj 172 81 delwrite~ \$0del 100;
+#X obj 369 37 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000
+#000000 1;
+#X msg 415 46 0;
+#X obj 99 216 outlet;
+#X obj 99 40 inlet;
+#X connect 0 0 5 0;
+#X connect 2 0 1 0;
+#X connect 3 0 4 0;
+#X connect 4 0 2 0;
+#X connect 4 0 8 0;
+#X connect 6 0 7 0;
+#X connect 7 0 4 0;
+#X connect 9 0 3 0;
+#X coords 0 -1 1 1 81 60 1 325 19;
